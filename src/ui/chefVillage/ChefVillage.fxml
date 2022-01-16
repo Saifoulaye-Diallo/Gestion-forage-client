@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="499.0" prefWidth="600.0" style="-fx-background-color: #17bea8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.chefVillage.ChefVillage">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="75.0" prefHeight="191.0" prefWidth="573.0" style="-fx-background-color: #c4fff3;">
+         <children>
+            <Label layoutX="49.0" layoutY="9.0" prefHeight="17.0" prefWidth="43.0" text="Nom">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label layoutX="49.0" layoutY="73.0" prefHeight="27.0" prefWidth="96.0" text="Prenom">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label layoutX="303.0" layoutY="9.0" prefHeight="27.0" prefWidth="96.0" text="Adresse">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label layoutX="303.0" layoutY="73.0" prefHeight="27.0" prefWidth="96.0" text="Telephone">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nom" layoutX="47.0" layoutY="34.0" prefHeight="34.0" prefWidth="231.0" promptText="Nom" />
+            <TextField fx:id="prenom" layoutX="47.0" layoutY="104.0" prefHeight="34.0" prefWidth="231.0" promptText="Prenom" />
+            <TextField fx:id="adresse" layoutX="303.0" layoutY="36.0" prefHeight="34.0" prefWidth="231.0" promptText="Adresse" />
+            <TextField fx:id="telephone" layoutX="303.0" layoutY="104.0" prefHeight="34.0" prefWidth="231.0" promptText="Telephone" />
+            <Button fx:id="btn_annuler" layoutX="305.0" layoutY="153.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #c0001a;" text="ANNULER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+            <Button fx:id="btn_enregistrer" layoutX="422.0" layoutY="153.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #008000;" text="ENREGISTRER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="280.0" prefHeight="208.0" prefWidth="573.0" style="-fx-background-color: #c4fff3;">
+         <children>
+            <Button fx:id="btn_modifier" layoutX="447.0" layoutY="120.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #4169E1;" text="MODIFIER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_supprimer" layoutX="447.0" layoutY="165.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #c0001a;" text="SUPPRIMER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tbl_cv" layoutX="14.0" layoutY="9.0" prefHeight="191.0" prefWidth="424.0" style="-fx-background-color: #17bea8;">
+              <columns>
+                <TableColumn fx:id="cl_nom" prefWidth="87.0" text="NOM" />
+                <TableColumn fx:id="cl_prenom" prefWidth="101.0" text="PRENOM" />
+                  <TableColumn fx:id="cl_adresse" prefWidth="112.0" text="ADRESSE" />
+                  <TableColumn fx:id="cl_telephone" prefWidth="123.0" text="TELEPHONE" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="110.0" layoutY="9.0" prefHeight="43.0" prefWidth="378.0" style="-fx-background-color: #c4fff3;" text="CHEF DE VILLAGE">
+         <font>
+            <Font name="System Bold Italic" size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #17bea8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.menuGestionUser.MenuController">
+   <children>
+      <VBox layoutX="25.0" layoutY="14.0" prefHeight="59.0" prefWidth="549.0" style="-fx-background-color: #c4fff3;">
+         <children>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="537.0" text="GESTION UTILISATEUR">
+               <font>
+                  <Font name="System Bold Italic" size="34.0" />
+               </font>
+            </Label>
+         </children></VBox>
+      <VBox layoutX="25.0" layoutY="91.0" prefHeight="279.0" prefWidth="178.0" style="-fx-background-color: #c4fff3;">
+         <children>
+            <Button fx:id="btn_user" mnemonicParsing="false" onAction="#allAction" prefHeight="38.0" prefWidth="181.0" text="UTILISATEUR" textFill="#5e0000">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_fonction" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#allAction" prefHeight="38.0" prefWidth="181.0" text="FONCTION" textFill="#5e0000">
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_role" layoutX="10.0" layoutY="48.0" mnemonicParsing="false" onAction="#allAction" prefHeight="38.0" prefWidth="181.0" text="ROLE" textFill="#5e0000">
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

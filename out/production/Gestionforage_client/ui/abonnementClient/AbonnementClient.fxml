@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="454.0" prefWidth="693.0" style="-fx-background-color: #17bea8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.abonnementClient.AbonnementClient">
+    <children>
+        <AnchorPane layoutX="10.0" layoutY="14.0" prefHeight="386.0" prefWidth="582.0" style="-fx-background-color: #c4fff3;" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="14.0">
+            <children>
+                <Button fx:id="btn_supprimer" layoutX="456.0" layoutY="338.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #c0001a;" text="SUPPRIMER" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="tbl_abonnement" layoutX="14.0" layoutY="46.0" prefHeight="320.0" prefWidth="649.0" AnchorPane.bottomAnchor="58.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="46.0">
+                    <columns>
+                        <TableColumn fx:id="cl_numeroAbon" prefWidth="174.0" text="NUMERO" />
+                        <TableColumn fx:id="cl_date" prefWidth="138.0" text="DATE" />
+                        <TableColumn fx:id="cl_description" prefWidth="243.0" text="DESCRIPTION" />
+                    </columns>
+                </TableView>
+            <ComboBox fx:id="combo_client" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="326.0" promptText="clients" />
+            <Button fx:id="search" layoutX="351.0" layoutY="14.0" mnemonicParsing="false" onAction="#allAction" prefHeight="25.0" prefWidth="112.0" text="Chercher" />
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

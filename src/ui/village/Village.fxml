@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="459.0" prefWidth="600.0" style="-fx-background-color: #17bea8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.village.Village">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="75.0" prefHeight="149.0" prefWidth="573.0" style="-fx-background-color: #c4fff3;">
+            <children>
+                <Label layoutX="49.0" layoutY="9.0" prefHeight="17.0" prefWidth="43.0" text="Nom">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+                <TextField fx:id="nom" layoutX="47.0" layoutY="34.0" prefHeight="34.0" prefWidth="231.0" promptText="Nom" />
+                <Button fx:id="btn_annuler" layoutX="299.0" layoutY="96.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #c0001a;" text="ANNULER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+                <Button fx:id="btn_enregistrer" layoutX="433.0" layoutY="96.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #008000;" text="ENREGISTRER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+            <Label layoutX="297.0" layoutY="9.0" prefHeight="27.0" prefWidth="162.0" text="Chef du village">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn_cv" layoutX="83.0" layoutY="96.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="195.0" style="-fx-background-color: #4169E1;" text="AJOUTER UN CHEF" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="choice_cv" layoutX="299.0" layoutY="34.0" onMouseClicked="#combo_cv" prefHeight="34.0" prefWidth="231.0" promptText="Selectionner le Chef du village" style="-fx-background-color: #FFFFFF;" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="14.0" layoutY="237.0" prefHeight="208.0" prefWidth="573.0" style="-fx-background-color: #c4fff3;">
+            <children>
+                <Button fx:id="btn_modifier" layoutX="323.0" layoutY="165.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #4169E1;" text="MODIFIER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_supprimer" layoutX="447.0" layoutY="165.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #c0001a;" text="SUPPRIMER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="tbl_village" layoutX="14.0" layoutY="8.0" prefHeight="191.0" prefWidth="299.0">
+                    <columns>
+                        <TableColumn fx:id="cl_nom" prefWidth="149.0" text="NOM" />
+                        <TableColumn fx:id="cl_cv" prefWidth="149.0" text="CHEF DU VILLAGE" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="110.0" layoutY="9.0" prefHeight="43.0" prefWidth="378.0" style="-fx-background-color: #c4fff3;" text="VILLAGE">
+            <font>
+                <Font name="System Bold Italic" size="37.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="518.0" prefWidth="698.0" style="-fx-background-color: #17bea8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.facture.Facture">
+    <children>
+        <AnchorPane layoutX="364.0" layoutY="71.0" prefHeight="384.0" prefWidth="302.0" style="-fx-background-color: #c4fff3;">
+            <children>
+                <Label layoutX="16.0" layoutY="27.0" prefHeight="27.0" prefWidth="137.0" text="Consomation">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+                <Label layoutX="14.0" layoutY="94.0" prefHeight="27.0" prefWidth="137.0" text="Prix Unitaire">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+                <Label layoutX="16.0" layoutY="155.0" prefHeight="27.0" prefWidth="96.0" text="Taxe">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="consommation" layoutX="14.0" layoutY="58.0" prefHeight="34.0" prefWidth="231.0" promptText="Consommation" />
+                <TextField fx:id="pu" cacheShape="false" editable="false" layoutX="14.0" layoutY="121.0" prefHeight="34.0" prefWidth="231.0" promptText="Prix Unitaire" />
+                <TextField fx:id="taxe" layoutX="16.0" layoutY="186.0" prefHeight="34.0" prefWidth="231.0" promptText="Taxe" />
+                <Label cacheShape="false" centerShape="false" focusTraversable="false" layoutX="17.0" layoutY="259.0" prefHeight="27.0" prefWidth="96.0" scaleShape="false" text="Total">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+               <effect>
+                  <Reflection />
+               </effect>
+                </Label>
+            <TextField fx:id="total" editable="false" layoutX="17.0" layoutY="286.0" prefHeight="34.0" prefWidth="231.0" promptText="Total">
+               <effect>
+                  <Reflection />
+               </effect></TextField>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="21.0" layoutY="72.0" prefHeight="384.0" prefWidth="312.0" style="-fx-background-color: #c4fff3;">
+         <children>
+            <Label layoutX="30.0" layoutY="88.0" prefHeight="27.0" prefWidth="124.0" text="Date facture">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="247.0" prefHeight="27.0" prefWidth="192.0" text="Date  Debut">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date_debut" layoutX="32.0" layoutY="274.0" prefHeight="34.0" prefWidth="265.0" />
+            <Label layoutX="28.0" layoutY="157.0" prefHeight="27.0" prefWidth="192.0" text="Compteur">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="compteur" layoutX="29.0" layoutY="183.0" prefHeight="34.0" prefWidth="178.0" promptText="Compteur" />
+            <TextField fx:id="date_facture" editable="false" focusTraversable="false" layoutX="30.0" layoutY="115.0" prefHeight="34.0" prefWidth="265.0" promptText="date facture" />
+                <TextField fx:id="num_facture" editable="false" focusTraversable="false" layoutX="30.0" layoutY="53.0" prefHeight="34.0" prefWidth="265.0" promptText="Numero" />
+                <Label layoutX="32.0" layoutY="26.0" prefHeight="27.0" prefWidth="88.0" text="Numero">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+            <Label layoutX="70.0" layoutY="220.0" prefHeight="27.0" prefWidth="192.0" text="Consommation">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="307.0" prefHeight="27.0" prefWidth="192.0" text="Date  Fin">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="date_fin" layoutX="33.0" layoutY="334.0" prefHeight="34.0" prefWidth="265.0" />
+            <Button fx:id="btn_valider" layoutX="216.0" layoutY="183.0" mnemonicParsing="false" onAction="#compteurs" prefHeight="34.0" prefWidth="82.0" style="-fx-background-color: #008000;" text="VALIDER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+        <Label alignment="CENTER" layoutX="76.0" layoutY="9.0" prefHeight="54.0" prefWidth="521.0" style="-fx-background-color: #c4fff3;" text="FACTURE">
+            <font>
+                <Font name="System Bold Italic" size="37.0" />
+            </font>
+        </Label>
+          <Button fx:id="btn_annuler" layoutX="423.0" layoutY="462.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #c0001a;" text="ANNULER" textFill="WHITE">
+              <font>
+                  <Font name="System Bold Italic" size="14.0" />
+              </font>
+      </Button>
+          <Button fx:id="btn_enregistrer" layoutX="536.0" layoutY="462.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #008000;" text="ENREGISTRER" textFill="WHITE">
+              <font>
+                  <Font name="System Bold Italic" size="14.0" />
+              </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="499.0" prefWidth="926.0" style="-fx-background-color: #17bea8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.newAbonnes.NewAbonnes">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="75.0" prefHeight="384.0" prefWidth="323.0" style="-fx-background-color: #c4fff3;" AnchorPane.bottomAnchor="40.0" AnchorPane.topAnchor="75.0">
+            <children>
+                <Label layoutX="16.0" layoutY="82.0" prefHeight="27.0" prefWidth="96.0" text="Numero">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+                <TextField fx:id="numero" editable="false" layoutX="14.0" layoutY="107.0" prefHeight="34.0" prefWidth="268.0" promptText="Numero" />
+                <Button fx:id="btn_annuler" layoutX="94.0" layoutY="336.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="96.0" style="-fx-background-color: #c0001a;" text="ANNULER" textFill="WHITE" AnchorPane.bottomAnchor="15.0">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+                <Button fx:id="btn_enregistrer" layoutX="197.0" layoutY="335.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #008000;" text="ENREGISTRER" textFill="WHITE" AnchorPane.bottomAnchor="15.0">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="14.0" prefHeight="54.0" prefWidth="268.0" style="-fx-background-color: #c4fff3;" text="COMPTEUR">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="352.0" layoutY="75.0" prefHeight="384.0" prefWidth="560.0" style="-fx-background-color: #c4fff3;" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="352.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="75.0">
+            <children>
+                <Button fx:id="btn_compteur" layoutX="323.0" layoutY="336.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #4169E1;" text="COMPTEUR" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="125.0">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_supprimer" layoutX="443.0" layoutY="336.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #c0001a;" text="SUPPRIMER" textFill="WHITE" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="5.0">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="tbl_client" layoutX="11.0" layoutY="14.0" prefHeight="314.0" prefWidth="542.0" AnchorPane.bottomAnchor="56.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="14.0">
+                    <columns>
+                        <TableColumn fx:id="cl_nom" minWidth="0.0" prefWidth="0.0" text="NOM" />
+                  <TableColumn fx:id="cl_numero" prefWidth="103.0" text="NUMERO" />
+                  <TableColumn fx:id="cl_client" prefWidth="438.0" text="CLIENT" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="57.0" layoutY="9.0" prefHeight="54.0" prefWidth="750.0" style="-fx-background-color: #c4fff3;" text="NOUVEAU ABONNES" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="119.0">
+            <font>
+                <Font name="System Bold Italic" size="37.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

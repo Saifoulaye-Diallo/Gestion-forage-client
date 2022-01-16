@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="325.0" prefWidth="600.0" style="-fx-background-color: #17bea8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.abonnement.Abonnement">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="75.0" prefHeight="227.0" prefWidth="573.0" style="-fx-background-color: #c4fff3;">
+            <children>
+                <Label layoutX="49.0" layoutY="9.0" prefHeight="27.0" prefWidth="96.0" text="Date">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+                <Label layoutX="303.0" layoutY="9.0" prefHeight="27.0" prefWidth="96.0" text="Numero">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+                <Label layoutX="303.0" layoutY="91.0" prefHeight="27.0" prefWidth="96.0" text="Client">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="numero" editable="false" layoutX="303.0" layoutY="36.0" prefHeight="34.0" prefWidth="231.0" promptText="Numero" />
+                <Button fx:id="btn_annuler" layoutX="305.0" layoutY="180.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #c0001a;" text="ANNULER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+                <Button fx:id="btn_enregistrer" layoutX="422.0" layoutY="180.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #008000;" text="ENREGISTRER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+            <TextArea fx:id="description" layoutX="49.0" layoutY="124.0" prefHeight="92.0" prefWidth="231.0" promptText="Texte Descriptif de l'abonnement" />
+            <Label layoutX="49.0" layoutY="91.0" prefHeight="27.0" prefWidth="122.0" text="Description">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combo_client" layoutX="305.0" layoutY="124.0" prefHeight="34.0" prefWidth="231.0" />
+            <TextField fx:id="date" editable="false" layoutX="49.0" layoutY="36.0" prefHeight="34.0" prefWidth="231.0" promptText="Date" />
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="110.0" layoutY="9.0" prefHeight="43.0" prefWidth="378.0" style="-fx-background-color: #c4fff3;" text="ABONNEMENT">
+            <font>
+                <Font name="System Bold Italic" size="37.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

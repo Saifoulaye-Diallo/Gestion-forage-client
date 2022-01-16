@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="499.0" prefWidth="922.0" style="-fx-background-color: #17bea8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.client.Client">
+    <children>
+        <AnchorPane layoutX="14.0" layoutY="75.0" prefHeight="384.0" prefWidth="310.0" style="-fx-background-color: #c4fff3;">
+            <children>
+                <Label layoutX="16.0" layoutY="11.0" prefHeight="17.0" prefWidth="43.0" text="Nom">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+                <Label layoutX="16.0" layoutY="75.0" prefHeight="27.0" prefWidth="96.0" text="Prenom">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+                <Label layoutX="14.0" layoutY="142.0" prefHeight="27.0" prefWidth="96.0" text="Adresse">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font></Label>
+                <Label layoutX="16.0" layoutY="203.0" prefHeight="27.0" prefWidth="96.0" text="Telephone">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="nom" layoutX="14.0" layoutY="36.0" prefHeight="34.0" prefWidth="231.0" promptText="Nom" />
+                <TextField fx:id="prenom" layoutX="14.0" layoutY="106.0" prefHeight="34.0" prefWidth="231.0" promptText="Prenom" />
+                <TextField fx:id="adresse" layoutX="14.0" layoutY="169.0" prefHeight="34.0" prefWidth="231.0" promptText="Adresse" />
+                <TextField fx:id="telephone" layoutX="16.0" layoutY="234.0" prefHeight="34.0" prefWidth="231.0" promptText="Telephone" />
+                <Button fx:id="btn_annuler" layoutX="22.0" layoutY="342.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: #c0001a;" text="ANNULER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+                <Button fx:id="btn_enregistrer" layoutX="139.0" layoutY="342.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #008000;" text="ENREGISTRER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font></Button>
+            <Label layoutX="16.0" layoutY="268.0" prefHeight="27.0" prefWidth="96.0" text="Village">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="choice_village" layoutX="14.0" layoutY="295.0" prefHeight="34.0" prefWidth="231.0" promptText="Choix du village" style="-fx-background-color: #FFFFFF;" />
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="342.0" layoutY="75.0" prefHeight="384.0" prefWidth="570.0" style="-fx-background-color: #c4fff3;">
+            <children>
+                <Button fx:id="btn_modifier" layoutX="318.0" layoutY="344.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #4169E1;" text="MODIFIER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btn_supprimer" layoutX="447.0" layoutY="344.0" mnemonicParsing="false" onAction="#allAction" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #c0001a;" text="SUPPRIMER" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                    </font>
+                </Button>
+                <TableView fx:id="tbl_client" layoutX="12.0" layoutY="9.0" onMouseClicked="#select" prefHeight="314.0" prefWidth="545.0">
+                    <columns>
+                        <TableColumn fx:id="cl_nom" prefWidth="106.0" text="NOM" />
+                        <TableColumn fx:id="cl_prenom" prefWidth="156.0" text="PRENOM" />
+                        <TableColumn fx:id="cl_numero" prefWidth="144.0" text="NUMERO" />
+                        <TableColumn fx:id="cl_village" prefWidth="138.0" text="VILLAGE" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="86.0" layoutY="9.0" prefHeight="54.0" prefWidth="750.0" style="-fx-background-color: #c4fff3;" text="CLIENT">
+            <font>
+                <Font name="System Bold Italic" size="37.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

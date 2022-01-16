@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="361.0" prefWidth="454.0" style="-fx-background-color: #17bea8;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.fonction.FonctionController">
+
+    <children>
+        <Label layoutX="14.0" layoutY="85.0" prefHeight="18.0" prefWidth="62.0" text="Nom">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font></Label>
+        <TextField fx:id="nom" layoutX="14.0" layoutY="116.0" prefHeight="31.0" prefWidth="184.0" />
+        <Button fx:id="btn_ajout" layoutX="60.0" layoutY="160.0" mnemonicParsing="false" onAction="#allAction" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #008000;" text="ENREGISTRER" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="12.0" />
+         </font></Button>
+        <Button fx:id="btn_actualiser" layoutX="215.0" layoutY="296.0" mnemonicParsing="false" onAction="#allAction" style="-fx-background-color: #008000;" text="Actualiser" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="12.0" />
+         </font></Button>
+        <Button fx:id="btn_modifier" layoutX="294.0" layoutY="296.0" mnemonicParsing="false" onAction="#allAction" style="-fx-background-color: #4169E1;" text="Modifier" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="12.0" />
+         </font></Button>
+        <Button fx:id="btn_supprimer" layoutX="369.0" layoutY="296.0" mnemonicParsing="false" onAction="#allAction" style="-fx-background-color: #c0001a;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="12.0" />
+         </font></Button>
+        <TableView fx:id="tabfonction" layoutX="218.0" layoutY="88.0" prefHeight="200.0" prefWidth="222.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="101.0" text="ID" />
+                <TableColumn fx:id="nomfonction" prefWidth="113.0" text="NOM" />
+            </columns>
+        </TableView>
+      <Label disable="true" layoutX="184.0" layoutY="324.0" prefHeight="17.0" prefWidth="170.0" text="\@Copyright 2021-Cours JAVA" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="65.0" layoutY="14.0" prefHeight="53.0" prefWidth="346.0" style="-fx-background-color: #c4fff3;" text="FONCTION">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+    </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+
+</AnchorPane>

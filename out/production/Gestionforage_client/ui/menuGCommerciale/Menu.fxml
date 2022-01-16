@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.GlyphsStack?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.menuAdmin.MenuGeneral">
+   <children>
+      <VBox layoutX="-2.0" prefHeight="466.0" prefWidth="219.0" style="-fx-background-color: #17bea8;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="95.0" prefWidth="224.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="24.0" prefHeight="35.0" prefWidth="146.0" text="GEST_FORAGE" textFill="#5b1212">
+                     <font>
+                        <Font name="Bodoni MT Black" size="14.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="XING" size="17.0" />
+                     </graphic>
+                  </Label>
+                  <Polyline fill="WHITE" layoutX="64.0" layoutY="88.0" points="-50.0, -40.0, 89.0, -40.0, -7.0, -18.0, -50.0, -40.0" strokeType="INSIDE" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="35.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" />
+            <GlyphsStack />
+            <Button fx:id="btn_facture" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="10.0" layoutY="200.0" lineSpacing="3.0" mnemonicParsing="false" onAction="#menuAction" style="-fx-background-color: #17bea8;" text="NOUVELLE FACTURE">
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="FILE" lineSpacing="3.0" underline="true" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="btn_reglement" alignment="BASELINE_LEFT" graphicTextGap="10.0" layoutX="35.0" layoutY="290.0" lineSpacing="3.0" mnemonicParsing="false" onAction="#menuAction" style="-fx-background-color: #17bea8;" text="REFLEMENT">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="FILE" lineSpacing="3.0" underline="true" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

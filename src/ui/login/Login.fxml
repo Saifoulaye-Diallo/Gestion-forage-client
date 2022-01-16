@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.login.Login">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="340.0" prefWidth="309.0">
+         <children>
+            <Pane layoutX="7.0" layoutY="8.0" prefHeight="323.0" prefWidth="295.0" style="-fx-background-color: #17bea8;">
+               <children>
+                  <Label alignment="CENTER" layoutX="57.0" layoutY="14.0" prefHeight="34.0" prefWidth="182.0" style="-fx-background-color: #c4fff3;" text="Login">
+                     <font>
+                        <Font name="System Bold Italic" size="23.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="email" layoutX="22.0" layoutY="83.0" prefHeight="35.0" prefWidth="259.0" />
+                  <Label layoutX="22.0" layoutY="48.0" prefHeight="34.0" prefWidth="68.0" text="Email">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="122.0" prefHeight="35.0" prefWidth="145.0" text="Mot de passe">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="79.0" layoutY="229.0" mnemonicParsing="false" onAction="#connection" prefHeight="42.0" prefWidth="154.0" style="-fx-background-color: #008000;" text="Connexion" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font></Button>
+                  <PasswordField fx:id="pswd" layoutX="22.0" layoutY="156.0" prefHeight="35.0" prefWidth="259.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
